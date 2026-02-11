@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dbqr2e3hnmyff"]
+
+[ext_resource type="Script" uid="uid://dul1hrgvlswjs" path="res://scripts/settings.gd" id="1_5p8wc"]
+
+[node name="Control" type="Control" unique_id=550219098]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5p8wc")
+
+[node name="back" type="Button" parent="." unique_id=283323352]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 9.0
+offset_right = 106.0
+offset_bottom = 85.0
+text = "BACK"
+
+[node name="fullscreen" type="CheckButton" parent="." unique_id=430577937]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 201.0
+offset_right = 351.0
+offset_bottom = 256.0
+text = "fullscreen"
+
+[connection signal="pressed" from="back" to="." method="_on_button_pressed"]
+[connection signal="toggled" from="fullscreen" to="." method="_on_check_button_toggled"]
