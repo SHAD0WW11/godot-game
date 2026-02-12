@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dbqr2e3hnmyff"]
 
 [ext_resource type="Script" uid="uid://dul1hrgvlswjs" path="res://scripts/settings.gd" id="1_5p8wc"]
+[ext_resource type="Script" uid="uid://d32127mc0nit7" path="res://scenes/fullscreen.gd" id="2_r6d6q"]
 
 [node name="Control" type="Control" unique_id=550219098]
 layout_mode = 3
@@ -30,6 +31,7 @@ offset_top = 201.0
 offset_right = 351.0
 offset_bottom = 256.0
 text = "fullscreen"
+script = ExtResource("2_r6d6q")
 
 [node name="fps cap" type="HSlider" parent="." unique_id=11230821]
 layout_mode = 0
