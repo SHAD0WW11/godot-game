@@ -7,16 +7,20 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -29.0
+offset_right = -1.0
+offset_bottom = -29.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5p8wc")
 
 [node name="back" type="Button" parent="." unique_id=283323352]
 layout_mode = 0
-offset_left = 12.0
-offset_top = 9.0
-offset_right = 106.0
-offset_bottom = 85.0
+offset_left = 7.0
+offset_top = 40.0
+offset_right = 101.0
+offset_bottom = 116.0
 text = "BACK"
 
 [node name="fullscreen" type="CheckButton" parent="." unique_id=430577937]
@@ -27,5 +31,27 @@ offset_right = 351.0
 offset_bottom = 256.0
 text = "fullscreen"
 
+[node name="fps cap" type="HSlider" parent="." unique_id=11230821]
+layout_mode = 0
+offset_left = 221.0
+offset_top = 283.0
+offset_right = 347.0
+offset_bottom = 299.0
+min_value = 30.0
+max_value = 240.0
+step = 0.5
+value = 60.0
+rounded = true
+scrollable = false
+
+[node name="Label" type="Label" parent="fps cap" unique_id=1523268332]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -27.0
+offset_right = 52.0
+offset_bottom = -4.0
+text = "fps cap"
+
 [connection signal="pressed" from="back" to="." method="_on_button_pressed"]
 [connection signal="toggled" from="fullscreen" to="." method="_on_check_button_toggled"]
+[connection signal="value_changed" from="fps cap" to="." method="_on_fps_cap_value_changed"]
