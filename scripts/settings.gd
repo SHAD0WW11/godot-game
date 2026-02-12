@@ -15,6 +15,10 @@ func _ready():
 		else:
 			#windowed
 			$fullscreen.button_pressed = false
+		
+func _process(delta: float) -> void:
+	$"fps cap/monitor fps".text = "monitor refresh rate: " + str(DisplayServer.screen_get_refresh_rate())
+
 #go back to menu
 func _on_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/menu.tscn")
