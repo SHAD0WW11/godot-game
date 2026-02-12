@@ -32,3 +32,10 @@ func _on_check_button_toggled(button_pressed):
 func _on_fps_cap_value_changed(value: int) -> void:
 	Engine.max_fps = value
 	$"fps cap/Label".text = "fps cap " + str(value)
+
+#vsync
+func _on_vsync_toggled(toggled_on: bool) -> void:
+	if toggled_on == true:
+		DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_ENABLED)
+	else:
+		DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
