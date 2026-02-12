@@ -7,6 +7,7 @@ func _ready():
 		$"fps cap/Label".text = "fps cap " + str(current_max_fps)
 		if $"fps cap/Label".text == "fps cap 0":
 			$"fps cap/Label".text = "fps cap 60"
+		$"fps cap".value = current_max_fps
 		#windowed/fullscreen mode show
 		if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN:
 			#fullscreen
@@ -26,3 +27,4 @@ func _on_check_button_toggled(button_pressed):
 #fps cap
 func _on_fps_cap_value_changed(value: int) -> void:
 	Engine.max_fps = value
+	$"fps cap/Label".text = "fps cap " + str(value)
