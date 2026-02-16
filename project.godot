@@ -15,6 +15,11 @@ run/main_scene="uid://bbvbfgsytow76"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SteamInfo="*uid://bnrrf8q027js4"
+Network="*uid://cq3b8bnp6no5g"
+
 [display]
 
 window/stretch/mode="canvas_items"
@@ -24,6 +29,10 @@ window/vsync/vsync_mode=0
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/bluebrains_character_controller/plugin.cfg", "res://addons/easy_peasy_multiplayer/plugin.cfg")
 
 [input]
 
@@ -62,3 +71,10 @@ textures/canvas_textures/default_texture_filter=3
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+
+[steam]
+
+initialization/app_id=0
+initialization/initialize_on_startup=false
+initialization/embed_callbacks=false
+multiplayer_peer/max_channels=4
