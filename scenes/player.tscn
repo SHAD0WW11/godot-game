@@ -8,7 +8,7 @@ size = Vector2(11, 16)
 
 [node name="player" type="Node2D" unique_id=1320243262]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1093226394]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1025791838]
 script = ExtResource("1_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=772638641]

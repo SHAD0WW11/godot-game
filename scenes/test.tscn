@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://vgus7ije3an0"]
 
 [ext_resource type="Script" uid="uid://dx11wgyyh8rr8" path="res://scripts/test.gd" id="1_errlg"]
+[ext_resource type="PackedScene" uid="uid://2bk8cuyl4x35" path="res://scenes/player.tscn" id="2_bl13t"]
 
 [node name="Node2D" type="Node2D" unique_id=1859974147]
 
@@ -11,5 +12,9 @@ offset_right = 288.0
 offset_bottom = 180.0
 text = "go back to menu idk test"
 script = ExtResource("1_errlg")
+
+[node name="player" parent="." unique_id=1320243262 instance=ExtResource("2_bl13t")]
+position = Vector2(560, 346)
+scale = Vector2(5, 5)
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

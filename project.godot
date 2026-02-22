@@ -15,11 +15,6 @@ run/main_scene="uid://bbvbfgsytow76"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
-[autoload]
-
-SteamInfo="*uid://bnrrf8q027js4"
-Network="*uid://cq3b8bnp6no5g"
-
 [display]
 
 window/stretch/mode="canvas_items"
@@ -32,7 +27,7 @@ version_control/autoload_on_startup=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/bluebrains_character_controller/plugin.cfg", "res://addons/easy_peasy_multiplayer/plugin.cfg")
+enabled=PackedStringArray("res://addons/bluebrains_character_controller/plugin.cfg")
 
 [input]
 
