@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djbntlfpbnufm"
-path="res://.godot/imported/gun-placeholder.png-32b6aaeb97d0615044ac73e8b98b278f.ctex"
+uid="uid://cnrvt0wtychu"
+path="res://.godot/imported/bullet-placeholder.png-bf3c70a643c176074ea1990b0ca428af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/gun-placeholder.png"
-dest_files=["res://.godot/imported/gun-placeholder.png-32b6aaeb97d0615044ac73e8b98b278f.ctex"]
+source_file="res://art/bullet-placeholder.png"
+dest_files=["res://.godot/imported/bullet-placeholder.png-bf3c70a643c176074ea1990b0ca428af.ctex"]
 
 [params]
 

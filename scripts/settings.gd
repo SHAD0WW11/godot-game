@@ -1,5 +1,5 @@
 extends Control
-
+#remake this somepoint lol
 var current_max_fps = Engine.max_fps
 
 func _ready():
@@ -17,7 +17,7 @@ func _ready():
 			$fullscreen.button_pressed = false
 		
 func _process(delta: float) -> void:
-	$"fps cap/monitor fps".text = "monitor refresh rate: " + str(DisplayServer.screen_get_refresh_rate())
+	$"fps cap/monitor fps".text = "monitor refresh rate: " + str(round(DisplayServer.screen_get_refresh_rate()))
 
 #go back to menu
 func _on_button_pressed() -> void:
