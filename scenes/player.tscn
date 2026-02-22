@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c2rn8yeho87nv" path="res://scripts/player_movement.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://dgwjh2ux2dy36" path="res://art/player-placeholder.png" id="2_qhqgy"]
+[ext_resource type="PackedScene" uid="uid://puvyockdth4v" path="res://scenes/gun.tscn" id="3_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dqkch"]
 size = Vector2(11, 16)
@@ -16,6 +17,9 @@ position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_dqkch")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=942017358]
+physics_interpolation_mode = 1
 position = Vector2(0.49999928, 0)
 scale = Vector2(1.875, 2)
 texture = ExtResource("2_qhqgy")
+
+[node name="gun" parent="CharacterBody2D" unique_id=693787417 instance=ExtResource("3_qhqgy")]

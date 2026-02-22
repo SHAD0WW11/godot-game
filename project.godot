@@ -27,7 +27,7 @@ version_control/autoload_on_startup=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/bluebrains_character_controller/plugin.cfg")
+enabled=PackedStringArray()
 
 [input]
 
@@ -58,7 +58,9 @@ right={
 
 [physics]
 
+2d/run_on_separate_thread=true
 3d/physics_engine="Jolt Physics"
+common/physics_interpolation=true
 
 [rendering]
 
