@@ -7,4 +7,3 @@ func _process(delta:float) -> void:
 	else:
 		scale.y = 1
 	
-	#print(rotation_degrees)

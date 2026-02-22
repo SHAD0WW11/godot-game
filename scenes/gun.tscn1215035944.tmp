@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://puvyockdth4v"]
+
+[ext_resource type="Script" uid="uid://bmkc28bmwmr70" path="res://scripts/player_gun.gd" id="1_og67c"]
+[ext_resource type="Texture2D" uid="uid://djbntlfpbnufm" path="res://art/gun-placeholder.png" id="2_gp1hk"]
+[ext_resource type="Script" uid="uid://dabyuymprbiof" path="res://scripts/gun_sprite_offset.gd" id="3_gp1hk"]
+
+[node name="Node2D" type="Node2D" unique_id=693787417]
+script = ExtResource("1_og67c")
+
+[node name="gun_sprite" type="Sprite2D" parent="." unique_id=1590076440]
+scale = Vector2(2, 2)
+texture = ExtResource("2_gp1hk")
+script = ExtResource("3_gp1hk")
